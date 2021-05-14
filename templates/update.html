@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="{% url 'update' obj.id %}" method="post" enctype="multipart/form-data">
+   {% csrf_token %}
+  <label for="fname">Head:</label><br>
+  <input type="text" id="fname" name="form_head" value="{{ obj.head}}"><br>
+  <label for="lname">Des:</label><br>
+  <input type="text" id="lname" name="form_des" value="{{ obj.des}}"><br><br>
+    <label for="pr">Price:</label><br>
+    <input type="text" id="pr"  name="form_price" value="{{ obj.price}}"><br><br>
+<!--   <input type="file"  name="form_file"><br><br>-->
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>

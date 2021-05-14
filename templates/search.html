@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Result</h1>
+{% for data in obj %}
+<h1>{{ data.head }}</h1>
+<br>
+<h>{{ data.des }}</h>
+<img style="width:100px;height:100px" src="{{ data.img.url }}" alt="">
+<br>
+{% endfor %}
+</body>
+</html>

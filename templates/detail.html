@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ obj.head }}</h1>
+<h>{{ obj.des }}</h>
+<img src="{{ obj.img.url }}" alt=""><br>
+<h>Price :{{ obj.price }}</h><br>
+<h>Offer:{{ obj.offer }}</h><br>
+<h>Spec:{{ obj.spec }}</h><br>
+<a href="{% url 'update' obj.id %}"><button>Edit</button></a>
+</body>
+</html>
