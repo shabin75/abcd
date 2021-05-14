@@ -50,3 +50,6 @@ def update(request, pk):
     else:
         obj = ServiceData.objects.get(id=pk)
         return render(request, 'update.html', {'obj': obj})
+
+def ax():
+    pass
